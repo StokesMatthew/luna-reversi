@@ -1,6 +1,7 @@
 {
-  "name": "myphase",
+  "name": "luna-reversi",
   "version": "0.1.0",
+  "homepage": "https://stokesmatthew.github.io/luna-reversi",
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.64.2",
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     "@testing-library/react": "^16.1.0",
     "@types/jest": "^29.5.14",
     "@types/react": "^19.0.4",
-    "@types/react-dom": "^19.0.2"
+    "@types/react-dom": "^19.0.2",
+    "gh-pages": "^6.3.0"
   }
 }

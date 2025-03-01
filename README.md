@@ -54,8 +54,8 @@ The game features 13 unique modes, each with special mechanics:
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/StokesMatthew/lunar-reversi.git
-cd lunar-reversi
+git clone https://github.com/StokesMatthew/luna-reversi.git
+cd luna-reversi
 ```
 
 2. Install dependencies
