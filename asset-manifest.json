@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/luna-reversi/static/css/main.b438bc7a.css",
+    "main.js": "/luna-reversi/static/js/main.b306bdfc.js",
+    "index.html": "/luna-reversi/index.html",
+    "main.b438bc7a.css.map": "/luna-reversi/static/css/main.b438bc7a.css.map",
+    "main.b306bdfc.js.map": "/luna-reversi/static/js/main.b306bdfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b438bc7a.css",
+    "static/js/main.b306bdfc.js"
+  ]
+}
