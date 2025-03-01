@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.gameScreen {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.gameOver {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.gamemode {
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  width: 445px;
+  height: 50px;
+  color: var(--text);
+}
+
+.stats:first-child {
+  margin-top: 20px;
+}
+
+.turn {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.points {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.deck {
+  text-align: right;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--primaryHover);
+}
+
+.button.start {
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.board, .hand {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.board.loaded, .hand.loaded {
+  opacity: 1;
+}
