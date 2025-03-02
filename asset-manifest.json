@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/luna-reversi/static/css/main.896eb312.css",
+    "main.css": "/luna-reversi/static/css/main.c2cf23f9.css",
     "main.js": "/luna-reversi/static/js/main.eeaa796b.js",
     "index.html": "/luna-reversi/index.html",
-    "main.896eb312.css.map": "/luna-reversi/static/css/main.896eb312.css.map",
+    "main.c2cf23f9.css.map": "/luna-reversi/static/css/main.c2cf23f9.css.map",
     "main.eeaa796b.js.map": "/luna-reversi/static/js/main.eeaa796b.js.map"
   },
   "entrypoints": [
-    "static/css/main.896eb312.css",
+    "static/css/main.c2cf23f9.css",
     "static/js/main.eeaa796b.js"
   ]
 }
