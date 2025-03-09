@@ -2,6 +2,13 @@
 
 LunaReversi is a strategic board game that combines the classic mechanics of Reversi/Othello with lunar phases, where players compete to control the board through clever placement of moon phase tiles.
 
+## 🎯 How to Play
+
+1. Select a game mode from the main menu
+2. Players take turns placing moon phase tiles on the board
+3. Capture opponent's pieces by creating valid phase sequences
+4. The player with the most pieces when the game ends wins
+
 ## 🎮 Game Modes
 
 The game features 13 unique modes, each with special mechanics:
@@ -18,13 +25,6 @@ The game features 13 unique modes, each with special mechanics:
 - **Hunter's Moon**: Limited visibility of opponent pieces
 - **Beaver Moon**: Special full/new moon effects
 - **Cold Moon**: Moving comet hazards
-
-## 🎯 How to Play
-
-1. Select a game mode from the main menu
-2. Players take turns placing moon phase tiles on the board
-3. Capture opponent's pieces by creating valid phase sequences
-4. The player with the most pieces when the game ends wins
 
 ![LunaReversi Game Screenshot](public/img/guide.png)
 
