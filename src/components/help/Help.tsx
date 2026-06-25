@@ -17,7 +17,7 @@ const Help: React.FC = () => {
                                 <li>When a sequence in the moon phase cycle is made, all opponent pieces within the sequence are captured</li> 
                                 <li>Each mode adds unique rules and challenges that modify these base mechanics</li>
                             </ul>
-                            <img src={"/img/guide.png"} alt="Guide" style={{ width: "100%", height: "auto" }}/>
+                            <img src={"/luna-reversi/img/guide.png"} alt="Guide" style={{ width: "100%", height: "auto" }}/>
                             <p>Select a game mode and click Start to begin!</p>
                         </div>
                     </div>

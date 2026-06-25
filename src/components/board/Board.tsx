@@ -65,7 +65,7 @@ const Board: React.FC<BoardProps> = ({
           >
             <div className="moon-contain">
               <img
-                src="/img/lock.png"
+                src="/luna-reversi/img/lock.png"
                 alt="Lock"
                 className={`lock ${!cell.trait.includes("Locked") ? "hide" : ""}`}
               />
@@ -76,7 +76,7 @@ const Board: React.FC<BoardProps> = ({
                 {cell.phase === "Empty" || lunar !== 3 || cell.trait.includes("Mine") || neighbors[x][y] === 0 ? "" : neighbors[x][y]}
               </div>
               <img
-                src="/img/mine.png"
+                src="/luna-reversi/img/mine.png"
                 alt="Mine"
                 className={`mine ${!cell.trait.includes("Mine") || board[x][y].phase === "Empty" ? "hide" : ""}`}
               />

@@ -28,18 +28,18 @@ export const ALL_DIRECTIONS = [
 export const HAND_SIZE: number = 3;
 
 export const MOON_IMGS: { [key: string]: string } = {
-    "Full Moon": "/img/fmoon.png",
-    "Waxing Crescent": "/img/wxcres.png",
-    "First Quarter": "/img/1quat.png",
-    "Waxing Gibbous": "/img/wxgibb.png",
-    "Waning Crescent": "/img/wncres.png",
-    "Third Quarter": "/img/3quat.png",
-    "Waning Gibbous": "/img/wngibb.png",
-    "New Moon": "/img/new.png",
-    "Empty": "/img/space.png",
-    "Comet": "/img/comet.png",
-    "Locked": "/img/lock.png",
-    "Planet": "/img/planet.png",
+    "Full Moon": "/luna-reversi/img/fmoon.png",
+    "Waxing Crescent": "/luna-reversi/img/wxcres.png",
+    "First Quarter": "/luna-reversi/img/1quat.png",
+    "Waxing Gibbous": "/luna-reversi/img/wxgibb.png",
+    "Waning Crescent": "/luna-reversi/img/wncres.png",
+    "Third Quarter": "/luna-reversi/img/3quat.png",
+    "Waning Gibbous": "/luna-reversi/img/wngibb.png",
+    "New Moon": "/luna-reversi/img/new.png",
+    "Empty": "/luna-reversi/img/space.png",
+    "Comet": "/luna-reversi/img/comet.png",
+    "Locked": "/luna-reversi/img/lock.png",
+    "Planet": "/luna-reversi/img/planet.png",
 };
 
 export const MODES: Mode[] = [

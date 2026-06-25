@@ -8,7 +8,7 @@ export const preloadImages = () => {
         img.src = url;
     });
     const img = new Image();
-    img.src = "/img/guide.png";
+    img.src = "/luna-reversi/img/guide.png";
 }; 
 
 // Get moon image for a cell
@@ -48,10 +48,10 @@ export const getMoonImage = (
           }
         }
         if (test && board[pos[0]][pos[1]].phase !== "Empty") {
-          return "/img/unknown.png";
+          return "/luna-reversi/img/unknown.png";
         }
       }
       return MOON_IMGS[phase as keyof typeof MOON_IMGS];
     }
-    return "/img/space.png";
+    return "/luna-reversi/img/space.png";
   };

@@ -46,12 +46,12 @@ const Hand: React.FC<HandProps> = ({ lunar, hand, selected, selectCard }) => {
                 <div className="card-contain">
                   <img 
                     className="card background glower"
-                    src={"/img/selected.png"} 
+                    src={"/luna-reversi/img/selected.png"} 
                     alt={card} 
                   />
                   <img 
                     className="card background"
-                    src={"/img/selected.png"} 
+                    src={"/luna-reversi/img/selected.png"} 
                     alt={card} 
                   />
                 </div>
