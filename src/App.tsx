@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
 // Components
@@ -45,7 +45,7 @@ const App: React.FC = () => {
     preloadImages();
   }, []);
 
-  const startGame = () => {
+  const startGame = useCallback(() => {
     const newDeck = initializeDeck();
     const shuffledDeck = shuffleDeck(newDeck);
     setNeighbors(Array.from({ length: 8 }, () => Array(8).fill(0)));
@@ -56,23 +56,23 @@ const App: React.FC = () => {
 
     setField({minX: 0, minY: 0, maxX: 7, maxY: 7});
 
-    if (lunar == 9) {
+    if (lunar === 9) {
       setSelected(-1);
       setPoints([8,8]);
-    }else {
+    } else {
       setSelected(0);
       setPoints([0,0]);
     }
     setCurrentPlayer("Player");
     setGameOver(false);
     setGameStarted(true);
-  }
+  }, [lunar]);
 
   useEffect(() => {
     if (lunar === -1) return;
     startGame();
 
-  }, [lunar]);
+  }, [lunar, startGame]);
 
   const selectCard = (s: number) => {
     if (playerHand[s] !== "Empty") {
@@ -92,14 +92,14 @@ const App: React.FC = () => {
       if (board[x][y].owner === "Player") {
         if (Math.floor(selected/10) === x && selected%10 === y) {
           setSelected(-1);
-        }else {
-        setSelected((x*10)+y);
+        } else {
+          setSelected((x*10)+y);
         }
-      }else if (board[x][y].phase === "Empty" && selected != -1) {
+      } else if (board[x][y].phase === "Empty" && selected !== -1) {
         moveTurn(x, y);
       }
 
-    }else { // Card placement-based turn [for not lunar 9]
+    } else { // Card placement-based turn [for not lunar 9]
       if (
         board[x][y].phase !== "Empty" ||
         gameOver ||
@@ -283,7 +283,7 @@ const App: React.FC = () => {
       currentBoard,
       points,
       "Player",
-      (lunar != 1) ? setBoard : (board: Cell[][]) => setBoard(playerBoard),
+      (lunar !== 1) ? setBoard : (board: Cell[][]) => setBoard(playerBoard),
       setPoints,
       pause
     );
@@ -312,7 +312,7 @@ const App: React.FC = () => {
             <div className="stats">
               <h4 className="turn">{currentPlayer}'s Turn</h4>
               <h4 className="points">{points[0] + " vs " + points[1]}</h4>
-              <h4 className="deck">{lunar == 9 ? "" : "Deck: " + deck.length}</h4>
+              <h4 className="deck">{lunar === 9 ? "" : "Deck: " + deck.length}</h4>
             </div>
           </div>
           <Board
@@ -330,7 +330,7 @@ const App: React.FC = () => {
               <p>You {`${points[0]>points[1]?" Won": points[0]<points[1]?" Lost": " Tied"}`}</p>
             </div>
           ) : (
-            lunar != 9 && (
+            lunar !== 9 && (
               <Hand lunar={lunar} hand={playerHand} selected={selected} selectCard={selectCard} />
             )
           )}

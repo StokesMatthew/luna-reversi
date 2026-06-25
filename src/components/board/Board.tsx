@@ -73,7 +73,7 @@ const Board: React.FC<BoardProps> = ({
                 className="mine-count"
                 style={{ color: cell.phase === "Empty" ? "#DDD" : "#222" }}
               >
-                {cell.phase === "Empty" || lunar != 3 || cell.trait.includes("Mine") || neighbors[x][y] === 0 ? "" : neighbors[x][y]}
+                {cell.phase === "Empty" || lunar !== 3 || cell.trait.includes("Mine") || neighbors[x][y] === 0 ? "" : neighbors[x][y]}
               </div>
               <img
                 src="/img/mine.png"

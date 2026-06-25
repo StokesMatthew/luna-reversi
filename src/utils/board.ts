@@ -44,7 +44,7 @@ export const setUpBoard = (
         Array.from({ length: 8 }, () => ({ owner: "", phase: "Empty", trait: "" }))
     );
 
-    if (lunar == 3) { // Place 6-10 mines [For lunar 3]
+    if (lunar === 3) { // Place 6-10 mines [For lunar 3]
         newBoard = presetPieces(lunar, newBoard, {owner: "", phase: "Empty", trait: "Mine"}, 6+Math.floor(Math.random()*4), 0, [0, 0], [7, 7]);
 
         const newNeighbors: number[][] = newBoard.map((row, rowIndex) =>
@@ -52,10 +52,10 @@ export const setUpBoard = (
         );
         setNeighbors(newNeighbors);
 
-    }else if (lunar == 6) { // Place 4 planets [For lunar 6]
+    } else if (lunar === 6) { // Place 4 planets [For lunar 6]
         newBoard = presetPieces(lunar, newBoard, {owner: "", phase: "Planet", trait: ""}, 4, 3, [1, 1], [6, 6]);
 
-    }else if (lunar == 9) { // Place 8 pieces for player & AI on the board [For lunar 9]
+    } else if (lunar === 9) { // Place 8 pieces for player & AI on the board [For lunar 9]
         const distance = (x1: number, y1: number, x2: number, y2: number): number =>
           Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
       
@@ -88,7 +88,7 @@ export const setUpBoard = (
     
         placeCells("AI", 8);
 
-    }else if (lunar == 12) { // Place 2 comets [For lunar 12]
+    } else if (lunar === 12) { // Place 2 comets [For lunar 12]
         newBoard = presetPieces(lunar, newBoard, {owner: "", phase: "Comet", trait: ""}, 2, 0, [0, 0], [7, 7]);
 
     }
